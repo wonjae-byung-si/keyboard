@@ -10,6 +10,8 @@ public class KeyDisplay : MonoBehaviour{
 	public int particleCount;
 	private new Light2D light;
 	public SpriteMask spriteMask;
+	private Vector2 ratio;
+	private SpriteRenderer spriteRenderer;
 	
 
 	private float fillOpacity{
@@ -18,13 +20,16 @@ public class KeyDisplay : MonoBehaviour{
 			value = Mathf.Min(Mathf.Max(value, 0f), 1f);
 			fill.color = new Color(1f, 1f, 1f, value);
 			light.intensity = fill.color.a;
-			spriteMask.transform.localScale = Vector2.one * (fill.color.a - 1f);
+			spriteMask.transform.localScale = ratio * (1f - fill.color.a);
 		}
 	}
 
 	void Start(){
 		particleSystem = GetComponent<ParticleSystem>();
 		light = GetComponent<Light2D>();
+		spriteRenderer = GetComponent<SpriteRenderer>();
+		ratio = spriteRenderer.size / 16;
+		fill.size = spriteRenderer.size;
 	}
 
 	void Update(){

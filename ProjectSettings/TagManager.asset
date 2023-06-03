@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Note Manager
+  - Keyboard
   layers:
   - Default
   - TransparentFX
@@ -38,11 +40,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 96034037
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Key Particle
     uniqueID: 2066869937
@@ -52,4 +54,7 @@ TagManager:
     locked: 0
   - name: Key Fill
     uniqueID: 1685143365
+    locked: 0
+  - name: Note
+    uniqueID: 476186195
     locked: 0

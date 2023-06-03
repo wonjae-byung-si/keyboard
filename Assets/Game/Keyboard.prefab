@@ -95,9 +95,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2945701463780901463}
+  - component: {fileID: 6545490996264734554}
   m_Layer: 0
   m_Name: Keyboard
-  m_TagString: Untagged
+  m_TagString: Keyboard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,6 +123,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6545490996264734554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2945701463780901462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48b9e1108f4d7886a9ac40ad7ddfd3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2945701463900889522
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,7 +1263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1798943672494354654, guid: a5b3517fcb065746f913c05d7a410648, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 65
+      value: 83
       objectReference: {fileID: 0}
     - target: {fileID: 1798943672494354654, guid: a5b3517fcb065746f913c05d7a410648, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2948,7 +2961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1798943672494354654, guid: a5b3517fcb065746f913c05d7a410648, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18
+      value: -18.000002
       objectReference: {fileID: 0}
     - target: {fileID: 1798943672494354654, guid: a5b3517fcb065746f913c05d7a410648, type: 3}
       propertyPath: m_LocalPosition.y

@@ -10,5 +10,11 @@ class TimedKeyNote : KeyNote{
 	protected override NoteResult GetNoteResult(){
 		return TimeResult(timeLeft);
 	}
+
+	public override void OnHit(NoteResult noteResult){
+		if(noteResult.Counts()){
+			manager.snare.Play();
+		}
+	}
 }
 

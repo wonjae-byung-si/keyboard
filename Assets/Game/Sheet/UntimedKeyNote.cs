@@ -21,5 +21,11 @@ public class UntimedKeyNote : KeyNote{
 	protected override float GetNoteHitCheckTime(){
 		return Mathf.Infinity;
 	}
-
+	
+	public override void OnHit(NoteResult result){
+		Debug.Log("WWWWWWWWWWWWW");
+		if(result.Counts()){
+			manager.castanet.Play();
+		}
+	}
 }

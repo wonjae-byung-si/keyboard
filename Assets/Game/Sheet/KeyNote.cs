@@ -6,7 +6,13 @@ public abstract class KeyNote : Note{
 
 	public override GameNote Spawn(){
 		GameNote instantiated = base.Spawn();
-		Sprite keySprite = Preload.keyNoteAppearance.GetSpriteFromKeyCode(key);
+		Sprite keySprite = null;
+		if(language == Language.English){
+			keySprite = Preload.keyNoteAppearanceEnglish.GetSpriteFromKeyCode(key);
+		}
+		else if(language == Language.Korean){
+			keySprite = Preload.keyNoteAppearanceKorean.GetSpriteFromKeyCode(key);
+		}
 		if(keySprite != null){
 			instantiated.GetComponent<SpriteRenderer>().sprite = keySprite;
 		}
@@ -28,6 +34,7 @@ public abstract class KeyNote : Note{
 		}
 		if(result != NoteResult.None){
 			manager.KeyHit(key, result);
+			OnHit(result);
 			return NoteHitResult.Destroy;
 		}
 		return NoteHitResult.None;

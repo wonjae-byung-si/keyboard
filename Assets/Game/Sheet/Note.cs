@@ -19,7 +19,6 @@ public abstract class Note{
 	private static NoteManager storedNoteManager;
 
 	public float timeLeft => manager.time - time;
-	public float decayTime => GetDecayTime();
 	public float noteHitCheckTime => GetNoteHitCheckTime();
 
 
@@ -38,9 +37,6 @@ public abstract class Note{
 
 	public abstract NoteHitResult CheckHit();
 	
-	public virtual float GetDecayTime(){
-		return 1f;
-	}
 
 	protected virtual float GetNoteHitCheckTime(){
 		return 1f;
@@ -51,4 +47,6 @@ public abstract class Note{
 		instantiated.note = this;
 		return instantiated;
 	}
+
+	public virtual void OnHit(NoteResult noteResult){}
 }

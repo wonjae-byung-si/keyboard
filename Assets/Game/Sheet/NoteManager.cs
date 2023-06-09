@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class NoteManager : MonoBehaviour{
 	public Sheet sheet;
@@ -10,12 +11,27 @@ public class NoteManager : MonoBehaviour{
 	public Vector2 endPosition;
 	[HideInInspector] public Keyboard keyboard;
 	public float noteDestroyTime;
+	private AudioSource audioSource;
 	
 	public Queue<GameNote> enteredNotes;
+	public int score{
+		get => mScore;
+		set{
+			mScore = value;
+			UpdateScoreText();
+		}
+	}
+	private int mScore = 0;
+	public TextMeshProUGUI scoreText;
+	public int goodScore;
+	public int mehScore;
+	public HitAudio castanet;
+	public HitAudio snare;
 
 
 	void Awake(){
 		keyboard = GameObject.FindGameObjectWithTag("Keyboard").GetComponent<Keyboard>();
+		audioSource = GetComponent<AudioSource>();
 		enteredNotes = new Queue<GameNote>();
 
 		// Intitialization for Debug
@@ -23,19 +39,25 @@ public class NoteManager : MonoBehaviour{
 		notes.Add(new UntimedKeyNote(1f, KeyCode.A));
 		notes.Add(new UntimedKeyNote(1.1f, KeyCode.S));
 		notes.Add(new UntimedKeyNote(1.2f, KeyCode.D));
-		for(int i = 0; i < 26; i++){
-			notes.Add(new TimedKeyNote(2f + 0.2f * i, (KeyCode)((int)KeyCode.A + i)));
+		for(int i = 0; i < 100; i++){
+			notes.Add(new UntimedKeyNote(2f + 0.1f * i, ((KeyCode)((int)((KeyCode.A + i % 26)))), Language.Korean));
 		}
 		sheet = new Sheet(notes, 3f);
 
 		time = -sheet.noteTravelTime;
+
+		UpdateScoreText();
+
+		audioSource.clip = sheet.music;
+		if(audioSource.clip != null){
+			audioSource.Play();
+		}
 	}
 
 	void Update(){
 		time += Time.deltaTime;
 		SpawnNotes();
 		MoveNotes();
-		HitNotes();
 	}
 
 	private void SpawnNotes(){
@@ -55,7 +77,7 @@ public class NoteManager : MonoBehaviour{
 		foreach(GameNote i in enteredNotes){
 			float timeLeft = i.note.time - time;
 			i.transform.position = NotePosition(timeLeft);
-			if(timeLeft < -i.note.decayTime){
+			if(timeLeft < -noteDestroyTime){
 				destroyCount++;
 			}
 		}
@@ -70,17 +92,14 @@ public class NoteManager : MonoBehaviour{
 				timeLeft / sheet.noteTravelTime);
 	}
 
-	private void HitNotes(){
+
+	public void KeyHit(KeyCode keyCode){
 		GameNote currentNote;
 		if(enteredNotes.TryPeek(out currentNote)){
 			float timeLeft = currentNote.note.time - time;
-			if(timeLeft > currentNote.note.noteHitCheckTime){
-				return;
-			}
-			NoteHitResult hitResult = currentNote.note.CheckHit();
-			if(hitResult == NoteHitResult.Destroy){
+			NoteHitResult noteHitResult = currentNote.note.CheckHit();
+			if(noteHitResult == NoteHitResult.Destroy){
 				RemoveCurrentNote();
-				return;
 			}
 		}
 	}
@@ -102,6 +121,12 @@ public class NoteManager : MonoBehaviour{
 
 	public void Hit(NoteResult result){
 		HitEffect(result);
+		if(result == NoteResult.Good){
+			score += goodScore;
+		}
+		else if(result == NoteResult.Meh){
+			score += mehScore;
+		}
 	}
 
 	private void HitEffect(NoteResult result){
@@ -118,5 +143,9 @@ public class NoteManager : MonoBehaviour{
 
 	private void Effect(GameObject effect){
 		Instantiate(effect).transform.position = endPosition;
+	}
+
+	private void UpdateScoreText(){
+		scoreText.text = score.ToString();
 	}
 }

@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d429fca4fdd5d138898828f62baa99f, type: 3}
+  m_Name: KeyNoteAppearanceKorean
+  m_EditorClassIdentifier: 
+  sprite:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: -1883218054, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: 1084484265, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: 1376234819, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -693158009, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: 1910875118, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: 1506489948, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -874438153, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -126535494, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: 168220355, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -2084148849, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -2038087320, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: 449504515, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: 906445293, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -188846325, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -1833118557, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -633085126, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -407949508, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: 458049876, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -62447247, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -833635790, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -402869721, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -1231875242, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: 1179253940, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -689008660, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: -983395379, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: 2062377619, guid: 4885c10aad9ed5d1fae59c07823b38b6, type: 3}
+  - {fileID: 0}

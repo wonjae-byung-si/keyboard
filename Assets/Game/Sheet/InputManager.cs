@@ -5,6 +5,7 @@ public class InputManager : MonoBehaviour{
 	public Keyboard keyboard;
 	public NoteManager noteManager;
 	private List<KeyCode> checkKeys;
+	[HideInInspector] public bool active = true;
 
 
 	void Start(){
@@ -12,10 +13,16 @@ public class InputManager : MonoBehaviour{
 	}
 
 	void Update(){
-		foreach(KeyCode i in checkKeys){
-			Debug.Log("a");
-			if(Input.GetKeyDown(i)){
-				noteManager.KeyHit(i);
+		if(active){
+			foreach(KeyCode i in checkKeys){
+				Debug.Log("a");
+				if(Input.GetKeyDown(i)){
+					noteManager.KeyHit(i);
+					keyboard.PulseEffect(i);
+				}
+				if(Input.GetKey(i)){
+					keyboard.HoldEffect(i);
+				}
 			}
 		}
 	}

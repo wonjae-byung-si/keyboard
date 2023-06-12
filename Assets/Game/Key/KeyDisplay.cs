@@ -1,6 +1,7 @@
-using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using Random = UnityEngine.Random;
 
 public class KeyDisplay : MonoBehaviour{
 	
@@ -48,35 +49,54 @@ public class KeyDisplay : MonoBehaviour{
 	}
 
 	void Update(){
-		if(Input.GetKey(keyCode)){
-			intensity = 1f;
-		}
-		else{
-			intensity -= Time.deltaTime / fillDisappearTime;
-		}
-		if(Input.GetKeyDown(keyCode)){
-			ParticleSystem.EmitParams emitParams = new ParticleSystem.EmitParams();
-			emitParams.startColor = hitColor;
-			particleSystem.Emit(particleCount);
-		}
+		intensity -= Time.deltaTime / fillDisappearTime;
 	}
 
 	public void HitEffect(NoteResult result){
 		if(result == NoteResult.Good){
-			Debug.Log(keyCode.ToString() + " Good!");
 			hitColor = Color.cyan;
 		}
 		else if(result == NoteResult.Meh){
-			Debug.Log(keyCode.ToString() + " Meh");
 			hitColor = Color.yellow;
 		}
 		else if(result == NoteResult.Miss){
-			Debug.Log(keyCode.ToString() + " Miss");
 			hitColor = Color.red;
 		}
 		else{
 			hitColor = Color.white;
 		}
+		PulseEffect();
+	}
+
+	public void PulseEffect(){
+		intensity = 1f;
+		ParticleSystem.EmitParams emitParams = new ParticleSystem.EmitParams();
+		emitParams.startColor = hitColor;
+		particleSystem.Emit(particleCount);
+	}
+
+	public void HoldEffect(){
+		intensity = 1f;
+	}
+
+
+	public void ScatterEffect(){
+		IEnumerator ScatterCoroutine(){
+			Vector2 start = transform.position;
+			Vector2 end = start + Random.insideUnitCircle * 160f;
+
+			float duration = 0.5f;
+			float timer = 0;
+			float randomRotation = Random.Range(-40f, 40f);
+			while(timer <= duration){
+				timer += Time.deltaTime;
+				float progress = timer / duration;
+				transform.position = Vector2.Lerp(start, end, progress);
+				transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Lerp(0, randomRotation, progress));
+				yield return null;
+			}
+		}
+		StartCoroutine(ScatterCoroutine());
 	}
 }
 

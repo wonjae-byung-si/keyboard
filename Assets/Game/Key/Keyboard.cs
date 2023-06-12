@@ -15,7 +15,22 @@ public class Keyboard : MonoBehaviour{
 		}
 	}
 
+
+	public void PulseEffect(KeyCode key){
+		keyDisplays[key].PulseEffect();
+	}
+
 	public void HitEffect(KeyCode key, NoteResult result){
 		keyDisplays[key].HitEffect(result);
+	}
+
+	public void ScatterAll(){
+		foreach(KeyValuePair<KeyCode, KeyDisplay> i in keyDisplays){
+			i.Value.ScatterEffect();
+		}
+	}
+
+	public void HoldEffect(KeyCode key){
+		keyDisplays[key].HoldEffect();
 	}
 }

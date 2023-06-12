@@ -4,16 +4,26 @@ using UnityEngine;
 using TMPro;
 
 public class NoteManager : MonoBehaviour{
-	public Sheet sheet;
+	private Sheet sheet;
+
 	[HideInInspector] public float time = 0f;
-	int noteIndex = 0;
+
+	private int noteIndex = 0;
+
+	[HideInInspector] public Keyboard keyboard;
+
+	[Header("Note")]
 	public Vector2 startPosition;
 	public Vector2 endPosition;
-	[HideInInspector] public Keyboard keyboard;
 	public float noteDestroyTime;
-	private AudioSource audioSource;
 	
 	public Queue<GameNote> enteredNotes;
+
+	[Header("Hit Reward")]
+	public HitReward goodHitReward;
+	public HitReward mehHitReward;
+	public HitReward missHitReward;
+
 	public int score{
 		get => mScore;
 		set{
@@ -22,14 +32,33 @@ public class NoteManager : MonoBehaviour{
 		}
 	}
 	private int mScore = 0;
-	public TextMeshProUGUI scoreText;
-	public int goodScore;
-	public int mehScore;
+
+	[Header("Hit Audio")]
 	public HitAudio castanet;
 	public HitAudio snare;
+	private AudioSource audioSource;
+
+	[Header("Health")]
+	public int maxHealth;
+	public int health{
+		get => mHealth;
+		set{
+			mHealth = value;
+			if(mHealth <= 0){
+				Gameover();
+			}
+			UpdateHealthBar();
+		}
+	}
+	private int mHealth;
+	
+	[Header("Plugs")]
+	public TextMeshProUGUI scoreText;
+	public AnimatedFill healthBar;
 
 
 	void Awake(){
+		health = maxHealth;
 		keyboard = GameObject.FindGameObjectWithTag("Keyboard").GetComponent<Keyboard>();
 		audioSource = GetComponent<AudioSource>();
 		enteredNotes = new Queue<GameNote>();
@@ -82,6 +111,7 @@ public class NoteManager : MonoBehaviour{
 			}
 		}
 		for(int i = 0; i < destroyCount; i++){
+			Hit(NoteResult.Miss);
 			RemoveCurrentNote();
 		}
 	}
@@ -121,11 +151,13 @@ public class NoteManager : MonoBehaviour{
 
 	public void Hit(NoteResult result){
 		HitEffect(result);
-		if(result == NoteResult.Good){
-			score += goodScore;
-		}
-		else if(result == NoteResult.Meh){
-			score += mehScore;
+		Dictionary<NoteResult, HitReward> rewards = new Dictionary<NoteResult, HitReward>();
+		rewards.Add(NoteResult.Good, goodHitReward);
+		rewards.Add(NoteResult.Meh, mehHitReward);
+		rewards.Add(NoteResult.Miss, missHitReward);
+		if(rewards.TryGetValue(result, out HitReward hitReward)){
+			score += hitReward.scoreReward;
+			health += hitReward.healthReward;
 		}
 	}
 
@@ -148,4 +180,13 @@ public class NoteManager : MonoBehaviour{
 	private void UpdateScoreText(){
 		scoreText.text = score.ToString();
 	}
-}
+
+	private void UpdateHealthBar(){
+		healthBar.fill = (float)health / maxHealth;
+	}
+
+	public void Gameover(){
+		keyboard.ScatterAll();
+		keyboard.GetComponent<InputManager>().active = false;
+	}
+}	

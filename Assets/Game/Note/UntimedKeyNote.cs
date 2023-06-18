@@ -23,7 +23,6 @@ public class UntimedKeyNote : KeyNote{
 	}
 	
 	public override void OnHit(NoteResult result){
-		Debug.Log("WWWWWWWWWWWWW");
 		if(result.Counts()){
 			manager.castanet.Play();
 		}

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Note Manager
   - Keyboard
+  - Sheet Selector
   layers:
   - Default
   - TransparentFX
@@ -57,4 +58,10 @@ TagManager:
     locked: 0
   - name: Note
     uniqueID: 476186195
+    locked: 0
+  - name: NoteHitArea
+    uniqueID: 1293093963
+    locked: 0
+  - name: Canvas
+    uniqueID: 3639065033
     locked: 0

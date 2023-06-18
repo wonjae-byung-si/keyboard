@@ -15,7 +15,6 @@ public class InputManager : MonoBehaviour{
 	void Update(){
 		if(active){
 			foreach(KeyCode i in checkKeys){
-				Debug.Log("a");
 				if(Input.GetKeyDown(i)){
 					noteManager.KeyHit(i);
 					keyboard.PulseEffect(i);

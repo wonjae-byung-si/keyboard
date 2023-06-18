@@ -4,4 +4,5 @@ using UnityEngine;
 public struct HitReward{
 	public int scoreReward;
 	public int healthReward;
+	public bool continueCombo;
 }

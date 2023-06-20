@@ -380,6 +380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sheets:
+  - {fileID: 11400000, guid: 1a2e652eda271b54dbfa260a1538e201, type: 2}
   - {fileID: 11400000, guid: 8b01681695234074183305c011671981, type: 2}
   - {fileID: 11400000, guid: ee3ff1973aaf1fe42bd76dc2ca67af8c, type: 2}
   sheetDisplayPrefab: {fileID: 706130063545350160, guid: 59a31784b9f916fa486da0bb222964fe, type: 3}
@@ -784,10 +785,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.027306272
-    y: 0.036082473
-    width: 0.94464946
-    height: 0.92783505
+    x: 0.020958085
+    y: 0.26439792
+    width: 0.95808387
+    height: 0.4712042
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60

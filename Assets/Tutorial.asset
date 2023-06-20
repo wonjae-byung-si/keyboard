@@ -1,0 +1,348 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1363588870e684501ac8e713c39964b8, type: 3}
+  m_Name: Tutorial
+  m_EditorClassIdentifier: 
+  notes:
+  - time: 0.6
+    key: 115
+    language: 0
+    noteType: 0
+  - time: 0.8
+    key: 104
+    language: 0
+    noteType: 0
+  - time: 1.8000001
+    key: 120
+    language: 0
+    noteType: 0
+  - time: 2
+    key: 109
+    language: 0
+    noteType: 0
+  - time: 3
+    key: 114
+    language: 0
+    noteType: 0
+  - time: 3.2
+    key: 107
+    language: 0
+    noteType: 0
+  - time: 4.2000003
+    key: 115
+    language: 0
+    noteType: 0
+  - time: 4.4
+    key: 112
+    language: 0
+    noteType: 0
+  - time: 5.4
+    key: 97
+    language: 0
+    noteType: 0
+  - time: 5.6
+    key: 104
+    language: 0
+    noteType: 0
+  - time: 6.6000004
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 6.8
+    key: 107
+    language: 0
+    noteType: 0
+  - time: 7
+    key: 115
+    language: 0
+    noteType: 0
+  - time: 8.400001
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 8.6
+    key: 112
+    language: 0
+    noteType: 0
+  - time: 9.6
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 9.8
+    key: 108
+    language: 0
+    noteType: 0
+  - time: 10
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 10.2
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 12
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 12.2
+    key: 109
+    language: 0
+    noteType: 0
+  - time: 12.4
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 13.8
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 14
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 14.2
+    key: 111
+    language: 0
+    noteType: 0
+  - time: 15.6
+    key: 122
+    language: 0
+    noteType: 0
+  - time: 15.8
+    key: 108
+    language: 0
+    noteType: 0
+  - time: 16.800001
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 17
+    key: 109
+    language: 0
+    noteType: 0
+  - time: 17.2
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 18.6
+    key: 115
+    language: 0
+    noteType: 0
+  - time: 18.8
+    key: 110
+    language: 0
+    noteType: 0
+  - time: 19.800001
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 20
+    key: 109
+    language: 0
+    noteType: 0
+  - time: 21
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 21.2
+    key: 112
+    language: 0
+    noteType: 0
+  - time: 22.2
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 22.4
+    key: 121
+    language: 0
+    noteType: 0
+  - time: 24
+    key: 113
+    language: 0
+    noteType: 1
+  - time: 24.2
+    key: 113
+    language: 0
+    noteType: 1
+  - time: 24.4
+    key: 107
+    language: 0
+    noteType: 1
+  - time: 24.6
+    key: 102
+    language: 0
+    noteType: 1
+  - time: 26.400002
+    key: 114
+    language: 0
+    noteType: 1
+  - time: 26.6
+    key: 107
+    language: 0
+    noteType: 1
+  - time: 26.8
+    key: 115
+    language: 0
+    noteType: 1
+  - time: 28.2
+    key: 115
+    language: 0
+    noteType: 1
+  - time: 28.4
+    key: 104
+    language: 0
+    noteType: 1
+  - time: 29.400002
+    key: 120
+    language: 0
+    noteType: 1
+  - time: 29.6
+    key: 109
+    language: 0
+    noteType: 1
+  - time: 30.6
+    key: 115
+    language: 0
+    noteType: 1
+  - time: 30.8
+    key: 109
+    language: 0
+    noteType: 1
+  - time: 31
+    key: 115
+    language: 0
+    noteType: 1
+  - time: 32.4
+    key: 115
+    language: 0
+    noteType: 1
+  - time: 32.6
+    key: 112
+    language: 0
+    noteType: 1
+  - time: 33.600002
+    key: 97
+    language: 0
+    noteType: 1
+  - time: 33.8
+    key: 104
+    language: 0
+    noteType: 1
+  - time: 34.800003
+    key: 100
+    language: 0
+    noteType: 1
+  - time: 35
+    key: 107
+    language: 0
+    noteType: 1
+  - time: 35.2
+    key: 115
+    language: 0
+    noteType: 1
+  - time: 36.600002
+    key: 100
+    language: 0
+    noteType: 1
+  - time: 36.8
+    key: 112
+    language: 0
+    noteType: 1
+  - time: 37.800003
+    key: 97
+    language: 0
+    noteType: 1
+  - time: 38
+    key: 107
+    language: 0
+    noteType: 1
+  - time: 38.2
+    key: 119
+    language: 0
+    noteType: 1
+  - time: 39.6
+    key: 119
+    language: 0
+    noteType: 1
+  - time: 39.8
+    key: 108
+    language: 0
+    noteType: 1
+  - time: 40.800003
+    key: 100
+    language: 0
+    noteType: 1
+  - time: 41
+    key: 107
+    language: 0
+    noteType: 1
+  - time: 41.2
+    key: 115
+    language: 0
+    noteType: 1
+  - time: 41.4
+    key: 103
+    language: 0
+    noteType: 1
+  - time: 43.2
+    key: 100
+    language: 0
+    noteType: 1
+  - time: 43.4
+    key: 107
+    language: 0
+    noteType: 1
+  - time: 44.4
+    key: 101
+    language: 0
+    noteType: 1
+  - time: 44.6
+    key: 104
+    language: 0
+    noteType: 1
+  - time: 45.600002
+    key: 101
+    language: 0
+    noteType: 1
+  - time: 45.8
+    key: 104
+    language: 0
+    noteType: 1
+  - time: 46
+    key: 108
+    language: 0
+    noteType: 1
+  - time: 46.2
+    key: 113
+    language: 0
+    noteType: 1
+  - time: 48
+    key: 115
+    language: 0
+    noteType: 1
+  - time: 48.2
+    key: 108
+    language: 0
+    noteType: 1
+  - time: 49.2
+    key: 101
+    language: 0
+    noteType: 1
+  - time: 49.4
+    key: 107
+    language: 0
+    noteType: 1
+  noteTravelTime: 1
+  music: {fileID: 8300000, guid: 60e5e69ca6303c3f796e0b3f6405d9ca, type: 3}
+  cover: {fileID: 21300000, guid: ba3c8bb99130fcdbdb268b90c96709d0, type: 3}
+  title: "\uD29C\uD1A0\uB9AC\uC5BC"
+  description: "\uC774\uAC70 \uBA3C\uC800 \uD558\uC138\uC694"

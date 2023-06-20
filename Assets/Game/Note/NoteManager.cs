@@ -20,8 +20,6 @@ public class NoteManager : MonoBehaviour{
 	public Queue<GameNote> enteredNotes;
 
 	[Header("Combo")]
-	public int feverRequirement;
-	public int feverMultiplier;
 	public TextMeshProUGUI comboText;
 	public string comboTextPrefix;
 	public string scoreMultiplierPrefix;
@@ -108,14 +106,18 @@ public class NoteManager : MonoBehaviour{
 		audioSource = GetComponent<AudioSource>();
 		enteredNotes = new Queue<GameNote>();
 
-		//InitializeReleaseSheet();
-		InitializeDebugSheet();
+		InitializeReleaseSheet();
+		//InitializeDebugSheet();
 
 		time = -sheet.noteTravelTime;
 
 		UpdateScoreText();
 		UpdateComboText();
+		StartCoroutine(PlayAudioDelay());
+	}
 
+	private IEnumerator PlayAudioDelay(){
+		yield return new WaitForSeconds(sheet.noteTravelTime);
 		audioSource.clip = sheet.music;
 		if(audioSource.clip != null){
 			audioSource.Play();
@@ -126,7 +128,7 @@ public class NoteManager : MonoBehaviour{
 		sheet = ScriptableObject.CreateInstance<Sheet>();
 		List<Note> noteList = new List<Note>();
 		for(int i = 0; i < 1000; i++){
-			Note note = new UntimedKeyNote(i * 0.1f, KeyCode.F, Language.Korean);
+			Note note = new Note(i * 0.1f, KeyCode.F, Language.Korean, NoteType.Untimed);
 			noteList.Add(note);
 		}
 		sheet.noteTravelTime = 1f;

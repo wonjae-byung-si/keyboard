@@ -34,15 +34,8 @@ public static class SheetParser{
 			float time = i.time;
 			Language language = i.language == 0 ? Language.Korean : Language.English;
 			KeyCode keyCode = (KeyCode)i.keyCode;
-			if(i.noteType == 0){
-				noteList.Add(new TimedKeyNote(time, keyCode, language));
-			}
-			else if(i.noteType == 1){
-				noteList.Add(new UntimedKeyNote(time, keyCode, language));
-			}
-			else{
-				Debug.LogError("병훈아 noteType이 0이나 1이 아닌데???");
-			}
+			NoteType noteType = i.noteType == 0 ? NoteType.Timed : NoteType.Untimed;
+			noteList.Add(new Note(time, keyCode, Language.Korean, noteType));
 		}
 
 		parsedJson.data.Sort();

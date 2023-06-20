@@ -1,9 +1,29 @@
 using UnityEngine;
 
-public abstract class Note{
+[System.Serializable]
+public class Note{
 	public float time;
-	public virtual GameNote Spawn(){
-		return InstantiateBaseGameNote();
+	public KeyCode key;
+	public Language language;
+	public NoteType noteType;
+
+
+	public GameNote Spawn(){
+		GameNote instantiated = InstantiateBaseGameNote();
+		Sprite keySprite = null;
+		if(language == Language.English){
+			keySprite = Preload.keyNoteAppearanceEnglish.GetSpriteFromKeyCode(key);
+		}
+		else if(language == Language.Korean){
+			keySprite = Preload.keyNoteAppearanceKorean.GetSpriteFromKeyCode(key);
+		}
+		if(keySprite != null){
+			instantiated.GetComponent<SpriteRenderer>().sprite = keySprite;
+		}
+		if(noteType == NoteType.Untimed){
+			instantiated.GetComponent<SpriteRenderer>().color = Color.red;
+		}
+		return instantiated;
 	}
 	public virtual void InitializeGameNote(GameNote gameNote){}
 
@@ -35,18 +55,68 @@ public abstract class Note{
 		return NoteResult.None;
 	}
 
-	public abstract NoteHitResult CheckHit();
+	public NoteHitResult CheckHit(){
+		if(!Input.anyKeyDown){
+			return NoteHitResult.None;
+		}
+		NoteResult result;
+		if(Input.GetKeyDown(key)){
+			result = GetNoteResult();
+		}
+		else{ // Wrong key
+			result = NoteResult.Miss;
+		}
+		if(result != NoteResult.None){
+			manager.KeyHit(key, result);
+			OnHit(result);
+			return NoteHitResult.Destroy;
+		}
+		return NoteHitResult.None;
+	}
+
+	private NoteResult GetNoteResult(){
+		if(noteType == NoteType.Timed){
+			return TimeResult(timeLeft);
+		}
+		else if(noteType == NoteType.Untimed){
+			return NoteResult.Good;
+		}
+		else{
+			Debug.LogError("getnoteresult for whatever that notetype is not implemented");
+			return NoteResult.None;
+		}
+	}
+
 	
 
-	protected virtual float GetNoteHitCheckTime(){
+	private float GetNoteHitCheckTime(){
+		if(noteType == NoteType.Untimed){
+			return Mathf.Infinity;
+		}
 		return 1f;
 	}
 
-	protected GameNote InstantiateBaseGameNote(){
+	private GameNote InstantiateBaseGameNote(){
 		GameNote instantiated = (Object.Instantiate(Preload.gameNotePrefab) as GameObject).GetComponent<GameNote>();
 		instantiated.note = this;
 		return instantiated;
 	}
 
-	public virtual void OnHit(NoteResult noteResult){}
+	public void OnHit(NoteResult noteResult){
+		if(noteResult.Counts()){
+			if(noteType == NoteType.Timed){
+				manager.snare.Play();
+			}
+			else if(noteType == NoteType.Untimed){
+				manager.castanet.Play();
+			}
+		}
+	}
+
+	public Note(float time, KeyCode keyCode, Language language, NoteType noteType){
+		this.time = time;
+		this.key = keyCode;
+		this.language = language;
+		this.noteType = noteType;
+	}
 }

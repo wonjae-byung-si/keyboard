@@ -5015,10 +5015,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.020926757
-    y: 0.29591838
-    width: 0.9566517
-    height: 0.40816328
+    x: 0.11291513
+    y: 0.4103226
+    width: 0.23616236
+    height: 0.23225807
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -5946,7 +5946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1231102755
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6938,8 +6938,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7037,11 +7037,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 0
   keyboard: {fileID: 0}
-  startPosition: {x: 100, y: 40}
+  startPosition: {x: 150, y: 40}
   endPosition: {x: -100, y: 40}
-  noteDestroyTime: 0.1
-  feverRequirement: 0
-  feverMultiplier: 0
+  noteDestroyTime: 0.3
   comboText: {fileID: 1026971776}
   comboTextPrefix: x
   scoreMultiplierPrefix: x
@@ -7060,7 +7058,7 @@ MonoBehaviour:
     continueCombo: 1
   missHitReward:
     scoreReward: 0
-    healthReward: -20
+    healthReward: -5
     continueCombo: 0
   gameEndPanel: {fileID: 1231102754}
   gameEndTitleText: {fileID: 2051652242}

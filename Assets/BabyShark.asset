@@ -1,0 +1,1076 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1363588870e684501ac8e713c39964b8, type: 3}
+  m_Name: BabyShark
+  m_EditorClassIdentifier: 
+  notes:
+  - time: 0.31
+    key: 100
+    language: 0
+    noteType: 1
+  - time: 0.85
+    key: 119
+    language: 0
+    noteType: 1
+  - time: 1.37
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 1.65
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 1.9
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 2.1
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 2.3
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 2.5
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 2.7
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 2.9
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 3.15
+    key: 113
+    language: 0
+    noteType: 0
+  - time: 3.4
+    key: 115
+    language: 0
+    noteType: 0
+  - time: 3.9
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 4.1
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 4.3
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 4.55
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 4.71
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 4.95
+    key: 122
+    language: 0
+    noteType: 0
+  - time: 5.15
+    key: 114
+    language: 0
+    noteType: 0
+  - time: 5.45
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 6
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 6.15
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 6.35
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 6.59
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 6.8
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 6.95
+    key: 119
+    language: 0
+    noteType: 0
+  - time: 7.15
+    key: 97
+    language: 0
+    noteType: 0
+  - time: 7.55
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 7.75
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 8.676325
+    key: 119
+    language: 0
+    noteType: 0
+  - time: 8.975508
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 9.5
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 9.82
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 10.11
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 10.28
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 10.45
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 10.7
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 10.88
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 11.1
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 11.3
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 11.55
+    key: 113
+    language: 0
+    noteType: 0
+  - time: 12.1
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 12.25
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 12.4
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 12.62
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 12.75
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 13.03
+    key: 122
+    language: 0
+    noteType: 0
+  - time: 13.27
+    key: 114
+    language: 0
+    noteType: 0
+  - time: 13.58
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 14.02
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 14.2
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 14.4
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 14.6
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 14.75
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 15.1
+    key: 119
+    language: 0
+    noteType: 0
+  - time: 15.3
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 15.58
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 15.82
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 16.7
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 17.18
+    key: 103
+    language: 0
+    noteType: 0
+  - time: 17.61
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 17.85
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 18.1
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 18.3
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 18.45
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 18.7
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 18.85
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 19.1
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 19.3
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 19.7
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 20.04
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 20.32
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 20.5
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 20.75
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 20.9
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 21.07
+    key: 122
+    language: 0
+    noteType: 0
+  - time: 21.32
+    key: 114
+    language: 0
+    noteType: 0
+  - time: 21.62
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 22.04
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 22.25
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 22.4
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 22.6
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 22.76
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 23.1
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 23.35
+    key: 103
+    language: 0
+    noteType: 0
+  - time: 23.55
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 23.81
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 24.6
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 24.85
+    key: 113
+    language: 0
+    noteType: 0
+  - time: 25.15
+    key: 103
+    language: 0
+    noteType: 0
+  - time: 25.6
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 25.800001
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 26.12
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 26.32
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 26.43
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 26.7
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 26.85
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 27.12
+    key: 119
+    language: 0
+    noteType: 0
+  - time: 27.35
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 27.57
+    key: 103
+    language: 0
+    noteType: 0
+  - time: 28.1
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 28.25
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 28.4
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 28.65
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 28.79
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 29
+    key: 122
+    language: 0
+    noteType: 0
+  - time: 29.25
+    key: 114
+    language: 0
+    noteType: 0
+  - time: 29.55
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 30.02
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 30.2
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 30.38
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 30.62
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 30.72
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 31
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 31.1
+    key: 113
+    language: 0
+    noteType: 0
+  - time: 31.25
+    key: 103
+    language: 0
+    noteType: 0
+  - time: 31.53
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 31.75
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 32.600002
+    key: 103
+    language: 0
+    noteType: 0
+  - time: 32.8
+    key: 103
+    language: 0
+    noteType: 0
+  - time: 33.05
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 33.25
+    key: 119
+    language: 0
+    noteType: 0
+  - time: 33.59
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 33.75
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 34.02
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 34.17
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 34.35
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 34.600002
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 34.72
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 35.02
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 35.22
+    key: 97
+    language: 0
+    noteType: 0
+  - time: 35.5
+    key: 114
+    language: 0
+    noteType: 0
+  - time: 35.98
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 36.05
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 36.37
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 36.55
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 36.7
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 36.9
+    key: 122
+    language: 0
+    noteType: 0
+  - time: 37.12
+    key: 114
+    language: 0
+    noteType: 0
+  - time: 37.4
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 37.85
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 38.03
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 38.2
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 38.4
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 38.55
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 38.9
+    key: 103
+    language: 0
+    noteType: 0
+  - time: 39
+    key: 103
+    language: 0
+    noteType: 0
+  - time: 39.12
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 39.2
+    key: 119
+    language: 0
+    noteType: 0
+  - time: 39.4
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 39.600002
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 40.600002
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 41
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 41.45
+    key: 115
+    language: 0
+    noteType: 0
+  - time: 41.95
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 42.12
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 42.32
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 42.52
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 42.68
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 42.9
+    key: 122
+    language: 0
+    noteType: 0
+  - time: 43.15
+    key: 114
+    language: 0
+    noteType: 0
+  - time: 43.4
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 43.9
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 44.11
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 44.22
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 44.4
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 44.600002
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 44.95
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 45.15
+    key: 115
+    language: 0
+    noteType: 0
+  - time: 45.4
+    key: 114
+    language: 0
+    noteType: 0
+  - time: 45.92
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 46.08
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 46.23
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 46.43
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 46.58
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 46.87
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 47.1
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 47.35
+    key: 114
+    language: 0
+    noteType: 0
+  - time: 47.6
+    key: 119
+    language: 0
+    noteType: 0
+  - time: 48.48
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 49.02
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 49.4
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 49.95
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 50.1
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 50.25
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 50.45
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 50.65
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 50.85
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 51.05
+    key: 97
+    language: 0
+    noteType: 0
+  - time: 51.35
+    key: 99
+    language: 0
+    noteType: 0
+  - time: 51.9
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 52.04
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 52.2
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 52.4
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 52.600002
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 52.85
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 53.05
+    key: 97
+    language: 0
+    noteType: 0
+  - time: 53.3
+    key: 99
+    language: 0
+    noteType: 0
+  - time: 53.85
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 54
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 54.14
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 54.4
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 54.55
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 54.8
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 55.25
+    key: 119
+    language: 0
+    noteType: 0
+  - time: 55.8
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 56.2
+    key: 100
+    language: 0
+    noteType: 1
+  - time: 58.38
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 58.9
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 59.4
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 59.9
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 60.11
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 60.23
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 60.5
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 60.65
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 61.03
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 61.2
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 61.5
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 62.02
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 62.2
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 62.35
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 62.600002
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 62.73
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 63
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 63.25
+    key: 115
+    language: 0
+    noteType: 0
+  - time: 63.55
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 64.02
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 64.2
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 64.35
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 64.6
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 64.76
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 65.07
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 65.23
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 65.53
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 66.1
+    key: 103
+    language: 0
+    noteType: 1
+  - time: 66.65
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 67.1
+    key: 115
+    language: 0
+    noteType: 0
+  - time: 67.61549
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 68.15
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 68.3
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 68.5
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 68.82
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 69
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 69.200005
+    key: 116
+    language: 0
+    noteType: 0
+  - time: 69.5
+    key: 115
+    language: 0
+    noteType: 0
+  - time: 69.70978
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 70.23
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 70.41
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 70.56
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 70.8
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 70.97
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 71.3
+    key: 99
+    language: 0
+    noteType: 0
+  - time: 71.5
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 71.75
+    key: 99
+    language: 0
+    noteType: 0
+  - time: 72.2
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 72.402435
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 72.57
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 72.83
+    key: 101
+    language: 0
+    noteType: 0
+  - time: 72.95
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 73.25
+    key: 115
+    language: 0
+    noteType: 0
+  - time: 73.45
+    key: 102
+    language: 0
+    noteType: 0
+  - time: 73.8
+    key: 114
+    language: 0
+    noteType: 1
+  - time: 74.6
+    key: 100
+    language: 0
+    noteType: 0
+  - time: 74.9
+    key: 100
+    language: 0
+    noteType: 1
+  noteTravelTime: 1.2
+  music: {fileID: 8300000, guid: 50b0183a543f8e1d497c78381746d754, type: 3}
+  cover: {fileID: 21300000, guid: d655c5006c5b995a5b3af67d7847dd95, type: 3}
+  title: Baby Shark
+  description: "\uAE40\uC900\uC5F0 \uCD5C\uC900\uC774 \uBD80\uB978\uB2E4"
